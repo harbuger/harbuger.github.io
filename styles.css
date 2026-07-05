@@ -808,4 +808,9 @@ svg .fade-late { transition: opacity 0.5s ease 1.3s; }
   .wrap { padding: 0 20px; }
   .hero { padding: 70px 0 50px; }
   .kpis { grid-template-columns: 1fr 1fr; }
+  /* keep wide mock content usable on phones: tighten, then scroll as last resort */
+  .mock-body, .mock-main { overflow-x: auto; }
+  .mock-table th, .mock-table td { padding: 6px 5px; }
+  .progress { min-width: 40px; }
+  .callout { padding: 24px 22px; }
 }
