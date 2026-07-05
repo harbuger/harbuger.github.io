@@ -603,6 +603,47 @@ svg text { font-family: var(--mono); }
   border-radius: 3px;
 }
 
+/* ---------- also built strip ---------- */
+.also { padding: 64px 0 8px; }
+.also-label {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.also-label::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+.also-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.also-card {
+  border: 1px solid var(--line);
+  background: var(--bg-raise);
+  padding: 24px 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.also-card h4 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+.also-card p {
+  color: var(--ink-dim);
+  font-size: 14px;
+  line-height: 1.65;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
 /* ---------- approach ---------- */
 .approach-grid {
   display: grid;
@@ -799,6 +840,7 @@ svg .fade-late { transition: opacity 0.5s ease 1.3s; }
   .stats { grid-template-columns: repeat(2, 1fr); }
   .stat { border-bottom: 1px solid var(--line-soft); }
   .approach-grid { grid-template-columns: 1fr; }
+  .also-grid { grid-template-columns: 1fr; }
   .nav-links { display: none; }
   .mock-split { grid-template-columns: 1fr; }
   .mock-side { display: flex; overflow-x: auto; border-right: none; border-bottom: 1px solid var(--line-soft); padding: 0; }
